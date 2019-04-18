@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Application</title>
+	</head>
+	<script text="script/javascript">
+		function leave()
+		{	
+			alert("hello");
+		}
+	</script>
+	<body bgcolor="cyan">
+		<h1 align="center">Leave Application</h1>
+		<form action="" method="POST">
+			<table align="center">
+				<tr><td>Reason</td><td><input type="text" name="reason" required/></td></tr>
+				<tr><td>From Date</td><td><input type="date" name="frDate" required/></td></tr>
+				<tr><td>To Date</td><td><input type="date" name="toDate" required/></td></tr>
+				<tr><td>Type of Leave</td><td><input type="radio" name="tol" value="CL"/>CL<input type="radio" name="tol" value="EL"/>EL<input type="radio" name="tol" value="AL"/>AL<input type="radio" name="tol" value="OD"/>OD</td0></tr>
+			</table>
+			<table align="center">
+				<tr><td><input type="button" name="lsubmit" value="Apply" Onclick="leave()"/></td></tr>
+			</table>
+		</form>
+	</body>
+</html> 

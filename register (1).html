@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Register</title>
+	</head>
+	<body bgcolor="cyan">
+		<h1 align="center">REGISTRATION</h1>
+		<form action="register.php" method="POST" align="center">	
+			<table align="center" border="20">
+				<tr><td>Name</td><td><input type="text" name="fname" pattern="{1,}" title="Name should contain ALPHABETS ONLY" required/></td></tr>
+				<tr><td>Employee ID</td><td><input type="text" name="fID" pattern="ANIL[0-9][0-9][0-9][0-9]" maxlength="8" placeholder="ANIL****" required/></td></tr>
+				<tr><td>Branch</td><td><input type="text" name="fbranch" required/></td></tr>
+				<tr><td>Type</td><td><input type="radio" name="type" value="T" required/>Teaching<input type="radio" name="type" value="NT" required/>Non-Teaching</td></tr>
+				<tr><td>Designation</td><td><input type="text" name="desig" required/></td></tr>
+				<tr><td>E-mail ID</td><td><input type="email" name="email" required/></td></tr>
+				<tr><td>Mobile No</td><td><input type="text" name="mob_no" minlength="10" maxlength="10" pattern="[0-9]{10,}" required/></td></tr>
+				<tr><td>Date of Joining</td><td><input type="date" name="DOJ" required/></td></tr>
+				<tr><td>Password</td><td><input type="password" name="pass" required/></td></tr>
+			</table>
+			<table align="center"><tr><td><input type="submit" name="register" value="REGISTER" align="center"></td></tr></table>			
+		</form>
+	</body>
+</html>

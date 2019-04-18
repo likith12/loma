@@ -1,0 +1,9 @@
+<?php
+if( isset($_POST['submit']))
+{
+	$var1=$_POST['Date'];
+	$today =date("Y-m-d");
+	$diff= date_diff(date_create($var1), date_create($today));
+	echo $diff->format("%y")."years  ".$diff->format("%m")."months  ".$diff->format("%d")."days";
+}
+?>
